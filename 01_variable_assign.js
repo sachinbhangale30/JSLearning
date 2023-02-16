@@ -1,0 +1,24 @@
+console.log("**********Step 1**************");
+var myFullName;
+console.log("____Variable Declared____");
+console.log("My Full Name:",myFullName);
+myFullName="Sachin Bhangale";
+console.log("____Variable Intialized____");
+console.log("My Full Name:",myFullName);
+myFullName="Sachin Ashok Bhangale";
+console.log("___Variable Updated___",);
+console.log("My FUll Name:",myFullName);
+console.log("***********step2***************");
+var myLove="I Love Only JS"
+console.log("____Declared & Intialized a Variable____");
+console.log(myLove);
+console.log("************step3****************");
+console.log("____Declared & Initialized On Same Line____");
+var firstName= "Sachin,";
+var lastName="Bhangale,";
+var age="29,";
+var address="Mumbai,";
+var pincode="421004,";
+var gender="Male,";
+var maritalStatus="No";
+console.log("First Name:",firstName,"Last Name:",lastName,"Age:",age,"Address:",address,"Pincode:",pincode,"Gender:",gender,"Marital Status:",maritalStatus);
