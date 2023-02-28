@@ -1,9 +1,9 @@
 var leap = function check_leap_year(leap_year) {
-    if(leap_year%4==0){
-        console.log(`${leap_year} is a Leap Year`);
+    if(  typeof leap_year=="string" || leap_year==undefined || isNaN(leap_year)){
+        console.log(`${leap_year} Invalid Year`);
     }
-    else if (typeof leap_year=="string" || leap_year==undefined || isNaN(leap_year)) {
-console.log(`${leap_year} Invalid Year`);
+    else if (leap_year%4==0){
+console.log(`${leap_year} is  a Leap Year`);
     }
     else{
         console.log(`${leap_year} is not a Leap Year`);
@@ -14,6 +14,7 @@ leap(1999);
 leap(1600);
 leap(2022);
 leap(1945);
+leap(null);
 leap("Twenty Twenty");
 leap(undefined);
 leap(NaN);
