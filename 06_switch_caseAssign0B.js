@@ -1,5 +1,5 @@
 var leap = function check_leap_year(leap_year) {
-    if(  typeof leap_year=="string" || leap_year==undefined || isNaN(leap_year)){
+    if( leap_year==null|| typeof leap_year=="string" || leap_year==undefined || isNaN(leap_year)){
         console.log(`${leap_year} Invalid Year`);
     }
     else if (leap_year%4==0){
