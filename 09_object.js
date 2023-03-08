@@ -30,3 +30,5 @@ let teachet ={};
 
 teacher.firstName = "Mohit"
 
+
+
