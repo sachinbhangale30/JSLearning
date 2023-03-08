@@ -114,3 +114,4 @@ console.log(`-----------------------------------13th----------------------------
 
 arrayNumbers.splice(4,3);
 console.log(`3 elements deleted from the index 4 in the array: ${arrayNumbers}`);
+
