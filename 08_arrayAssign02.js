@@ -15,31 +15,35 @@ console.log(`The Third last element in array: ${arrayNumbers[arrayNumbers.length
 
 console.log(`-----------------------------------4th----------------------------------`);
 
-console.log(`Even Numbers`);
-function evenNumber(arg) {
-   
+// console.log(`Even Numbers`);
+// function evenNumber(arg) {
+   const evenArray = [];
 for (let index = 0; index < arrayNumbers.length; index++) {
     const element = arrayNumbers[index];
     
     if (element%2==0) {
-      console.log(element);
+      evenArray.push(element)
+      
       } 
    }
-   
-}
-  evenNumber(arrayNumbers);
+   console.log(`Even Numbers: ${evenArray}`);
+// }
+//   evenNumber(arrayNumbers);
  
   console.log(`-----------------------------------5th----------------------------------`);
 
 
-   console.log(`Odd Numbers`);
+   // console.log(`Odd Numbers`);
+
+   const oddArray = [];
       for (let index = 0; index < arrayNumbers.length; index++) {
          const element = arrayNumbers[index];
 if (element%2 != 0) {
- 
-console.log(element);
+ oddArray.push(element);
+
  }
 }
+console.log(`Even Numbers: ${oddArray}`);
 
 console.log(`-----------------------------------6th----------------------------------`);
 // function evenSum(arr,n) {
