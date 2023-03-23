@@ -31,7 +31,7 @@ arrayTcs.forEach(element => {
   console.log(`Company Name: ${element.emp_company} Employee Name: ${element.emp_name}`);
  });
 
-console.error(`-------------------------Average Salary of Employees from Wipro----------------------------`);
+console.error(`-------------------------Average Salary of Employees from Wipro using forEach()----------------------------`);
 const arrayWipro = arrayOfEmployees.filter(element => element.emp_company == "Wipro");
 let sum = 0;
 arrayWipro.forEach(element => {
@@ -39,7 +39,15 @@ arrayWipro.forEach(element => {
 });
 console.log(sum/arrayWipro.length);
 
-console.error(`-------------------------Average Salary of Employees from Wipro and Infy----------------------------`);
+console.error(`----------------------------Using Reduce Method--------------------------------------------------------------`);
+const reduce1 = arrayWipro.reduce((runningTotal,value) => {
+return runningTotal + value.emp_salary;
+},0);
+console.log(reduce1/arrayWipro.length);
+
+
+
+console.error(`-------------------------Average Salary of Employees from Wipro and Infy forEach()----------------------------`);
 const arrayWiproInfy = arrayOfEmployees.filter(element => {
 if (element.emp_company == "Wipro" || element.emp_company == "Infy") {
     return element;
@@ -51,3 +59,16 @@ arrayWiproInfy.forEach(element => {
     count = count + element.emp_salary;
 });
 console.log(count/arrayWiproInfy.length);
+
+console.error(`----------------------------Using Reduce Method--------------------------------------------------------------`);
+
+
+
+
+const sum1 = arrayWiproInfy.reduce((runningTotal,value) => {
+    return runningTotal + value.emp_salary;
+     
+    },0);
+   
+    console.log(sum1/arrayWiproInfy.length);
+   
