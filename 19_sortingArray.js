@@ -20,3 +20,8 @@ arrayNum.sort( (a, b) => { // 3  6
     return a>b ? -1 : 1;
 } );
 console.log(arrayNum);
+
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort((a, b) =>  a - b); //ascending
+// points.sort((a, b) =>  b - a); //descending
+// console.log(points);
