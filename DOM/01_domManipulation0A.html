@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <main> 
+    <h1 id = "mainHeading"> HTML and JavaScript are crucial technologies </h1>
+    <p> The web would not work withou them...</p>
+    <div id="advantages">
+    <ul>
+        <li> Flexible </li>
+        <li> Available </li> 
+        <li> Magical </li>
+    </ul>
+</div>
+</main>
+<script>
+    console.log(`------------------H1 element stored in mainHeading----------------------`);
+    const mainHeading = document.querySelector("#mainHeading");
+    console.log(mainHeading.innerHTML);
+
+    console.log(`------------------li element at 1st index stored in secondAdvantage----------------------`);
+    const secondAdvantage = document.querySelectorAll("li")
+    console.log(secondAdvantage[1].innerHTML);
+
+    console.log(`------------------div element with ID advantages stored in advDiv----------------------`);
+    const advDiv = document.querySelector("#advantages");
+    console.log(advDiv.innerHTML);
+</script>
+    
+</body>
+</html>
