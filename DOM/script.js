@@ -21,5 +21,20 @@ console.log(h2Element[1].innerHTML);
  
  console.log("====== API querySelectorAll() to select element by class ====="); 
  const elementsByQuery = document.querySelectorAll(".liItem"); 
- console.log(elementsByQuery);
+ elementsByQuery[3].innerHTML = "Oracle Database"; 
+ console.log(elementsByQuery[3]);
 
+ console.log("====== Changing the attribute of an element ====="); 
+ const elementMyProfile = document.querySelector("#myProfile"); 
+ elementMyProfile.setAttribute("href", "https://www.linkedin.com/"); 
+ console.log(elementMyProfile);
+
+ console.log("====== Changing the CSS properties ====="); 
+ const elementTechStack = document.querySelector("#techStack"); 
+ elementTechStack.style.color = "red"; 
+ elementTechStack.style.fontFamily = "Courier New', Courier, monospace";
+
+ console.log("====== Remove Element ====="); 
+ const elementDivProject = document.querySelector("#divProject"); 
+ const elementProject = document.querySelector("#project"); 
+ elementDivProject.removeChild(elementProject);
