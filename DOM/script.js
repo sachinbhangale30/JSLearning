@@ -38,3 +38,49 @@ console.log(h2Element[1].innerHTML);
  const elementDivProject = document.querySelector("#divProject"); 
  const elementProject = document.querySelector("#project"); 
  elementDivProject.removeChild(elementProject);
+
+ console.log("====== Adding Element =====");
+const elementDiv = document.querySelector("#divProject");
+const elementP = document.createElement("p");
+const elementText = document.createTextNode("Team Size - 7");
+elementP.appendChild(elementText);
+elementDiv.appendChild(elementP);
+
+
+
+function show () {
+console.log("Click Event....");
+};
+
+const elementAddress = document.querySelector("#address"); 
+elementAddress.addEventListener("click", ()=> { 
+    console.log("Listening click event....."); 
+    // alert("You have clicked on address");
+});
+
+elementAddress.addEventListener("mouseover", ()=> { 
+    console.log("Mouse Hovering....."); 
+    elementAddress.style.color = "red";
+});
+
+
+const isEvenButton = document.querySelector("#isEvenButton"); 
+isEvenButton.addEventListener('click', () => { 
+    const inputValue = prompt("Please enter number to check..", 0); 
+    const givenNum = +inputValue; 
+    if (inputValue==null || isNaN(givenNum) || givenNum<0) { 
+        alert("Invalid value"); 
+    }else{ 
+        const result = inputValue%2==0 ? true : false; 
+        if(result){ alert("Given Number is Even"); 
+    }else{ 
+        alert("Given number is Odd"); 
+    } 
+} 
+} );
+
+const confirmElement = document.querySelector("#confirm"); 
+confirmElement.addEventListener('click', () => { 
+    const result = confirm("Are you sure ?"); 
+    console.log(result);
+});
